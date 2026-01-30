@@ -1,6 +1,6 @@
 # Sam Boleke - Portfolio
 
-A modern, commission-ready portfolio website showcasing full-stack software engineering work, case studies, and professional experience. Built with Next.js 16, TypeScript, and Tailwind CSS.
+A modern, professional portfolio website showcasing full-stack software engineering work, case studies, and professional experience. Built with Next.js 16, TypeScript, and Tailwind CSS.
 
 ## 🚀 Features
 
@@ -138,7 +138,7 @@ No environment variables required for basic setup. Add any API keys or secrets a
 
 This portfolio is designed to be:
 
-- **Commission-Ready:** Clear CTAs, professional presentation, verifiable references
+- **Professional:** Clear CTAs, polished presentation, verifiable references
 - **High Standard:** Premium UI/UX, smooth animations, responsive design
 - **Performance-Focused:** Optimized images, fast loading, SEO-friendly
 - **Accessible:** Semantic HTML, proper ARIA labels, keyboard navigation
