@@ -283,7 +283,7 @@ export default function HomePage() {
 
         <footer className="footer">
           <span>© {new Date().getFullYear()} {profile.name}</span>
-          <span>Built with Next.js • Deployed on Vercel</span>
+          <span>Built with Next.js</span>
         </footer>
       </main>
     </>

@@ -16,7 +16,6 @@ A modern, professional portfolio website showcasing full-stack software engineer
 - **Framework:** Next.js 16.1.5 (App Router)
 - **Language:** TypeScript 5
 - **Styling:** Tailwind CSS 4 + Custom CSS
-- **Deployment:** Vercel (recommended)
 
 ## 📦 Getting Started
 
@@ -78,54 +77,12 @@ portfolio/
 └── README.md
 ```
 
-## ✏️ Customization
-
-### Update Your Information
-
-Edit `src/lib/data.ts` to update:
-
-- **Profile:** Name, location, email, social links, summary
-- **Projects:** Add/edit project case studies
-- **Experiences:** Teaching, mentoring, work experience
-- **References:** Professional references
-
-### Update Profile Photo
-
-1. Place your photo in `public/` folder
-2. Update the image path in `src/app/page.tsx`:
-```tsx
-<Image
-  src="/your-photo.jpg"
-  alt="Portrait description"
-  ...
-/>
-```
-
-### Styling
-
-- Global styles: `src/app/globals.css`
-- Component-specific styles: Inline styles or add to `globals.css`
-- Color scheme: Update CSS variables in `:root` selector
-
-## 🚢 Deployment
-
-### Deploy to Vercel (Recommended)
-
-1. Push your code to GitHub/GitLab/Bitbucket
-2. Import your repository on [Vercel](https://vercel.com)
-3. Vercel will automatically detect Next.js and configure build settings
-4. Deploy!
-
-### Build for Production
+## 🚢 Build for Production
 
 ```bash
 npm run build
 npm start
 ```
-
-### Environment Variables
-
-No environment variables required for basic setup. Add any API keys or secrets as needed.
 
 ## 📝 Available Scripts
 
@@ -150,11 +107,8 @@ This project is private and proprietary.
 ## 👤 Author
 
 **Relebohile Samuel Boleke (Sam Boleke)**
-- Portfolio: [Your Portfolio URL]
-- LinkedIn: [Your LinkedIn]
-- GitHub: [Your GitHub]
 - Email: releboleke@gmail.com
 
 ---
 
-Built with ❤️ using Next.js and deployed on Vercel.
+Built with ❤️ using Next.js.
