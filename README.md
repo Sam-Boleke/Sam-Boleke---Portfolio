@@ -1,36 +1,160 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sam Boleke - Portfolio
 
-## Getting Started
+A modern, commission-ready portfolio website showcasing full-stack software engineering work, case studies, and professional experience. Built with Next.js 16, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🚀 Features
 
+- **Professional Hero Section** - Clear positioning as a Software Engineer with photo, skills, and CTAs
+- **Project Case Studies** - Detailed case studies for each project with problem/solution/highlights
+- **Experience & References** - Teaching, mentoring, and professional references
+- **Responsive Design** - Mobile-first with smooth animations and modern UI/UX
+- **SEO Optimized** - Proper metadata and semantic HTML
+- **Performance** - Optimized images, fast loading, and production-ready
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 16.1.5 (App Router)
+- **Language:** TypeScript 5
+- **Styling:** Tailwind CSS 4 + Custom CSS
+- **Deployment:** Vercel (recommended)
+
+## 📦 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd portfolio
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+portfolio/
+├── public/
+│   ├── SAM 7.jpg          # Profile photo
+│   └── ...                 # Other static assets
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   └── MobileNav.tsx    # Mobile navigation component
+│   │   ├── projects/
+│   │   │   └── [slug]/
+│   │   │       └── page.tsx      # Dynamic project case study pages
+│   │   ├── globals.css            # Global styles
+│   │   ├── layout.tsx             # Root layout with metadata
+│   │   └── page.tsx               # Homepage
+│   └── lib/
+│       └── data.ts                # Profile, projects, experiences, references data
+├── package.json
+├── next.config.ts
+├── tsconfig.json
+└── README.md
+```
 
-## Learn More
+## ✏️ Customization
 
-To learn more about Next.js, take a look at the following resources:
+### Update Your Information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Edit `src/lib/data.ts` to update:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Profile:** Name, location, email, social links, summary
+- **Projects:** Add/edit project case studies
+- **Experiences:** Teaching, mentoring, work experience
+- **References:** Professional references
 
-## Deploy on Vercel
+### Update Profile Photo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Place your photo in `public/` folder
+2. Update the image path in `src/app/page.tsx`:
+```tsx
+<Image
+  src="/your-photo.jpg"
+  alt="Portrait description"
+  ...
+/>
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Styling
+
+- Global styles: `src/app/globals.css`
+- Component-specific styles: Inline styles or add to `globals.css`
+- Color scheme: Update CSS variables in `:root` selector
+
+## 🚢 Deployment
+
+### Deploy to Vercel (Recommended)
+
+1. Push your code to GitHub/GitLab/Bitbucket
+2. Import your repository on [Vercel](https://vercel.com)
+3. Vercel will automatically detect Next.js and configure build settings
+4. Deploy!
+
+### Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+### Environment Variables
+
+No environment variables required for basic setup. Add any API keys or secrets as needed.
+
+## 📝 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 🎨 Design Philosophy
+
+This portfolio is designed to be:
+
+- **Commission-Ready:** Clear CTAs, professional presentation, verifiable references
+- **High Standard:** Premium UI/UX, smooth animations, responsive design
+- **Performance-Focused:** Optimized images, fast loading, SEO-friendly
+- **Accessible:** Semantic HTML, proper ARIA labels, keyboard navigation
+
+## 📄 License
+
+This project is private and proprietary.
+
+## 👤 Author
+
+**Relebohile Samuel Boleke (Sam Boleke)**
+- Portfolio: [Your Portfolio URL]
+- LinkedIn: [Your LinkedIn]
+- GitHub: [Your GitHub]
+- Email: releboleke@gmail.com
+
+---
+
+Built with ❤️ using Next.js and deployed on Vercel.
